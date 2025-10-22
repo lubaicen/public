@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>我的 Flask 部落格</title>
+</head>
+<body>
+    <h1>我的 Flask 部落格</h1>
+    <a href="{{ url_for('new_post') }}">✏️ 新增文章</a>
+    <hr>
+
+    {% for post in posts %}
+        <h2>{{ post.title }}</h2>
+        <p><b>作者：</b>{{ post.author }}</p>
+        <p>{{ post.content }}</p>
+        <hr>
+    {% else %}
+        <p>目前沒有文章。</p>
+    {% endfor %}
+</body>
+</html>
