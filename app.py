@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 # 模擬資料庫 (暫存在記憶體)
 posts = [
-    {"title": "第一篇文章", "author": "麒安", "content": "這是我的第一篇 Flask 部落格文章！"},
+    {"title": "第一篇文章", "author": "柏岑", "content": "這是我的第一篇 Flask 部落格文章！"},
     {"title": "第二篇文章", "author": "小艾", "content": "Flask 真是太好用了！"},
 ]
 
